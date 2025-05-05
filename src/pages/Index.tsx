@@ -1,18 +1,17 @@
-
-import { useState, useRef } from "react";
+import { useState, useRef } from "react");
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Bold, Italic, Link as LinkIcon, Heading1, Heading2, Quote, 
-         Image as ImageIcon, Video, Type, AlignLeft, AlignCenter, AlignRight } from "lucide-react";
+         Image as ImageIcon, Video, AlignLeft, AlignCenter, AlignRight } from "lucide-react";
 import MediaUploadDialog from "@/components/MediaUploadDialog";
 import ColorPicker from "@/components/ColorPicker";
 import FontSizeSelect from "@/components/FontSizeSelect";
 
 const TelegraphEditor = () => {
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
-  const [content, setContent] = useState("");
+  const [title, setTitle] = useState(""");
+  const [author, setAuthor] = useState(""");
+  const [content, setContent] = useState(""");
   const editorRef = useRef<HTMLDivElement>(null);
 
   const formatText = (format: string) => {
@@ -107,7 +106,13 @@ const TelegraphEditor = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-2xl mx-auto px-4 py-8">
+      <header className="bg-blue-600 text-white py-4 mb-6">
+        <div className="max-w-2xl mx-auto px-4">
+          <h1 className="text-2xl font-bold">Почитай-ка</h1>
+          <p className="text-sm text-blue-100">Создавайте и делитесь интересными статьями</p>
+        </div>
+      </header>
+      <div className="max-w-2xl mx-auto px-4 pb-8">
         <main className="tl_article">
           <header className="mb-8">
             <input

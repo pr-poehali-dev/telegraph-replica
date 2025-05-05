@@ -1,5 +1,4 @@
-
-/* Стили для текстового редактора в стиле Telegraph */
+/* Стили для текстового редактора Почитай-ка */
 
 .tl_article {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -11,7 +10,7 @@
 }
 
 .tl_article_content:empty:before {
-  content: "Начните писать или вставьте ваш текст...";
+  content: "Начните писать свою статью или вставьте готовый текст...";
   color: #888;
   font-style: italic;
 }
