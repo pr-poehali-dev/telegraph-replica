@@ -1,0 +1,57 @@
+
+/* Стили для текстового редактора в стиле Telegraph */
+
+.tl_article {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.tl_article_content {
+  outline: none;
+}
+
+.tl_article_content:empty:before {
+  content: "Начните писать или вставьте ваш текст...";
+  color: #888;
+  font-style: italic;
+}
+
+.tl_article_content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.tl_article_content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tl_article_content blockquote {
+  border-left: 3px solid #eee;
+  padding-left: 1rem;
+  color: #666;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.tl_article_content a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.tl_article_content a:hover {
+  text-decoration: underline;
+}
+
+.tl_article_content p {
+  margin-bottom: 1rem;
+}
+
+/* Стили для полей ввода заголовка и автора */
+input[type="text"]::placeholder {
+  color: #ccc;
+}
