@@ -51,6 +51,48 @@
   margin-bottom: 1rem;
 }
 
+/* Новые стили для изображений и видео */
+.tl_article_content figure.tl_figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.tl_article_content .tl_image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tl_article_content .tl_caption {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.tl_article_content .tl_video_container {
+  margin: 2rem 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.tl_article_content .tl_video_container iframe,
+.tl_article_content .tl_video_container video.tl_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.tl_article_content video.tl_video {
+  width: 100%;
+  border-radius: 4px;
+}
+
 /* Стили для полей ввода заголовка и автора */
 input[type="text"]::placeholder {
   color: #ccc;
